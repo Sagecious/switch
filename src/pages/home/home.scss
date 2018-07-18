@@ -1,3 +1,63 @@
 page-home {
-
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 120px;
+        height: 254px;
+      }
+      
+      /* Hide default HTML checkbox */
+      .switch input {display:none;}
+      
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        margin-right: -1.3in;
+        margin-left: 1.3in;
+        margin-top: 1.75in;
+        margin-bottom: -1.75in;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 112px;
+        width: 112px;
+        left: 4px;
+        bottom: 4px;
+        background-color: rgb(255, 255, 255);
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: rgb(58, 64, 68);
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px rgb(58, 64, 68);
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateY(-132px);
+        -ms-transform: translateY(-132px);
+        transform: translateY(-132px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 500px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
 }
