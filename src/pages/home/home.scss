@@ -8,20 +8,17 @@ page-home {
       
       /* Hide default HTML checkbox */
       .switch input {display:none;}
-      
+
+
       /* The slider */
       .slider {
         position: absolute;
         cursor: pointer;
-        margin-right: -1.3in;
-        margin-left: 1.3in;
-        margin-top: 1.75in;
-        margin-bottom: -1.75in;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #ccc;
+        background-color: #22b8cc;
         -webkit-transition: .4s;
         transition: .4s;
       }
@@ -29,13 +26,17 @@ page-home {
       .slider:before {
         position: absolute;
         content: "";
-        height: 112px;
+        height: 127px;
         width: 112px;
         left: 4px;
         bottom: 4px;
         background-color: rgb(255, 255, 255);
         -webkit-transition: .4s;
         transition: .4s;
+      }
+
+      .slider + .master{
+        background-color: #882323;
       }
       
       input:checked + .slider {
@@ -47,9 +48,9 @@ page-home {
       }
       
       input:checked + .slider:before {
-        -webkit-transform: translateY(-132px);
-        -ms-transform: translateY(-132px);
-        transform: translateY(-132px);
+        -webkit-transform: translateY(-119px);
+        -ms-transform: translateY(-119px);
+        transform: translateY(-119px);
       }
       
       /* Rounded sliders */
